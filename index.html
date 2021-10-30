@@ -1,93 +1,159 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Eliezer Barreto | Desarrollador web</title>
-	<link rel="stylesheet" href="styles/aos.css">
-	<link rel="stylesheet" href="styles/styles.css">
-</head>
-<body>
-	<div class="container">
-		<header>
-			<nav>
-				<button data-tab-target="#inicio">Inicio</button>
-				<button data-tab-target="#proyectos">Proyectos</button>
-				<button data-tab-target="#contacto">Contacto</button>
-				<!-- <ion-icon name="heart"></ion-icon> -->
-			</nav>
-		</header>
-		<main>
-			<section id="inicio" data-tab-content class="s1 tab-content tab-content-active hero-banner">
-				<div class="hero-banner-content" data-aos="fade-up">
-					<img src="img/mylogo.png" alt="mi logo">
-					<h1>Eliezer Barreto</h1>
-					<h2>Desarrollador web</h2>
-					<div class="tecnologias">
-						<img src="img/html--logo.png" alt="html">
-						<img src="img/css--logo.jpg" alt="css">
-						<img src="img/js--logo.png" alt="js">
-						<img src="img/jquery--logo.png" alt="jquery">
-						<img src="img/parcel--logo.png" alt="parcel">
-						<img src="img/react--logo.png" alt="react">
-						<img src="img/svelte--logo.png" alt="svelte">
-					</div>
-				</div>
-			</section>
-			<section id="proyectos" data-tab-content class="s2 tab-content proyectos">
-				<div class="titulo-proyectos" data-aos="fade-up"><h2>Mis proyectos</h2></div>
-				<div class="contenedor-proyectos">
-					<div class="galeria">
-						<a href="https://stoic-ardinghelli-e3cf6c.netlify.app/" target="_blank">
-							<img src="https://raw.githubusercontent.com/Eliezer516/control-de-inventario-con-reactjs/main/image.jpg" alt="">
-						</a>
-						<a href="https://cosas-por-hacer.netlify.app/" target="_blank">
-							<img src="https://github.com/Eliezer516/todo-app/blob/main/img.jpg?raw=true" alt="">
-						</a>
-						<a href="https://modest-noyce-8d6be6.netlify.app/" target="_blank">
-							<img src="https://camo.githubusercontent.com/5d893f1eb46ac1a5a33bfeb96e4502bd6e469ead9a423f624c5bf21cad2ab683/68747470733a2f2f692e696d6775722e636f6d2f6f4e6a595652442e6a7067" alt="">
-						</a>
-						<a href="https://dreamy-minsky-045cb7.netlify.app" target="_blank">
-							<img src="https://camo.githubusercontent.com/0fdbed55b4d7c41499a6ba83b36248d7bc6b35491bd97aacc09cad5c48187283/68747470733a2f2f692e696d6775722e636f6d2f6144304c6d56562e6a7067" alt="">
-						</a>
-						<a href="https://calcudolar.netlify.app" target="_blank">
-							<img src="img/calcudolar.jpg" alt="">
-						</a>
-					</div>
-				</div>
-			</section>
-			<section id="contacto" data-tab-content class="s3 tab-content contacto">
-				<div class="contenido-contacto">
-					<div class="titulo-contacto"><h2>Contacto</h2></div>
-					<form>
-						<div class="form-container">
-							<div class="form-input">
-								<label for="nombre">Nombre</label>
-								<input type="text" name="" id="nombre" required>
-							</div>
-							<div class="form-input">
-								<label for="email">Email</label>	
-								<input type="email" name="" id="email" required>
-							</div>
-							<div class="form-input">
-								<label for="mensaje">Mensaje</label>
-								<textarea name="" id="mensaje" required></textarea>
-							</div>
-							<div class="form-input"></div>
-							<div class="form-input"></div>
-							<button type="submit">Enviar</button>
-						</div>
-						<div class="info-container">
-							
-						</div>
-					</form>
-				</div>
-			</section>
-		</main>
-	</div>
-<!-- 	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-	<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
-	<script src="scripts/aos.js"></script>
-	<script src="scripts/main.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eliezer Barreto | Desarrollador web</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <nav>
+          <button data-tab-target="#inicio">Inicio</button>
+          <button data-tab-target="#proyectos">Proyectos</button>
+          <button data-tab-target="#contacto">Contacto</button>
+          <!-- <ion-icon name="heart"></ion-icon> -->
+        </nav>
+      </header>
+      <main>
+        <section
+          id="inicio"
+          data-tab-content
+          class="s1 tab-content tab-content-active hero-banner"
+        >
+          <div class="hero-banner-content">
+            <img class="banner-img" src="img/mylogo.png" alt="mi logo" />
+            <h1>Eliezer Barreto</h1>
+            <h2>Desarrollador web</h2>
+            <div class="tecnologias">
+              <img src="img/html--logo.png" alt="html" />
+              <img src="img/css--logo.jpg" alt="css" />
+              <img src="img/js--logo.png" alt="js" />
+              <img src="img/jquery--logo.png" alt="jquery" />
+              <img src="img/parcel--logo.png" alt="parcel" />
+              <img src="img/react--logo.png" alt="react" />
+              <img src="img/svelte--logo.png" alt="svelte" />
+            </div>
+          </div>
+        </section>
+        <section
+          id="proyectos"
+          data-tab-content
+          class="s2 tab-content proyectos"
+        >
+          <div class="contenedor-proyectos">
+            <div class="titulo-proyectos"><h2>Mis proyectos</h2></div>
+            <div class="galeria">
+              <a
+                href="https://stoic-ardinghelli-e3cf6c.netlify.app/"
+                target="_blank"
+              >
+                <img
+                  src="https://raw.githubusercontent.com/Eliezer516/control-de-inventario-con-reactjs/main/image.jpg"
+                  alt="Control de inventario"
+                />
+              </a>
+              <a href="https://cosas-por-hacer.netlify.app/" target="_blank">
+                <img
+                  src="https://github.com/Eliezer516/todo-app/blob/main/img.jpg?raw=true"
+                  alt=""
+                />
+              </a>
+              <a
+                href="https://modest-noyce-8d6be6.netlify.app/"
+                target="_blank"
+              >
+                <img
+                  src="https://camo.githubusercontent.com/5d893f1eb46ac1a5a33bfeb96e4502bd6e469ead9a423f624c5bf21cad2ab683/68747470733a2f2f692e696d6775722e636f6d2f6f4e6a595652442e6a7067"
+                  alt=""
+                />
+              </a>
+              <a
+                href="https://dreamy-minsky-045cb7.netlify.app"
+                target="_blank"
+              >
+                <img
+                  src="https://camo.githubusercontent.com/0fdbed55b4d7c41499a6ba83b36248d7bc6b35491bd97aacc09cad5c48187283/68747470733a2f2f692e696d6775722e636f6d2f6144304c6d56562e6a7067"
+                  alt=""
+                />
+              </a>
+              <a href="https://calcudolar.netlify.app" target="_blank">
+                <img src="img/calcudolar.jpg" alt="" />
+              </a>
+            </div>
+          </div>
+        </section>
+        <section
+          id="contacto"
+          data-tab-content
+          class="s3 tab-content contacto"
+        >
+          <div class="contenido-contacto">
+            <div class="titulo-contacto"><h2>Contacto</h2></div>
+            <div class="texto-contacto">
+              <p>
+                Para contactarme puedes completar el formulario o escribirme por
+                mis redes sociales
+              </p>
+            </div>
+            <div class="formulario">
+              <form>
+                <div class="form-container">
+                  <div class="form-input">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" name="" id="nombre" required />
+                  </div>
+                  <div class="form-input">
+                    <label for="email">Email</label>
+                    <input type="email" name="" id="email" required />
+                  </div>
+                  <div class="form-input">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="" id="mensaje" required></textarea>
+                  </div>
+                  <button type="submit">Enviar</button>
+                </div>
+              </form>
+              <div class="info">
+                <div class="info-container">
+                  <div class="info-normal">
+                    <div class="info-normal__icon">
+                      <ion-icon name="call-outline"></ion-icon>
+                      <span>+58 424-7009628</span>
+                    </div>
+                    <div class="info-normal__icon">
+                      <ion-icon name="mail-unread-outline"></ion-icon>
+                      <span>ybarretomaterano@gmail.com</span>
+                    </div>
+                  </div>
+                  <div class="links-sociales">
+                    <a href="https://github.com/Eliezer516" target="_blank">
+                      <ion-icon name="logo-github"></ion-icon>
+                    </a>
+                    <a href="#" target="_blank">
+                      <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                    <a href="#" target="_blank">
+                      <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="scripts/gsap.min.js"></script>
+    <script type="module" src="scripts/main.js"></script>
+  </body>
 </html>

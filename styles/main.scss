@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 
 $primary: #34495e;
 $secondary: #2c3e50;
@@ -7,7 +7,7 @@ $secondary: #2c3e50;
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	font-family: 'Poppins', sans-serif;
+	font-family: "Poppins", sans-serif;
 }
 
 .container {
@@ -20,225 +20,40 @@ body {
 	background: #000;
 }
 
-/* Navbar */
-
-header {
+main {
+	position: relative;
 	width: 100%;
+	min-height: 100vh;
+}
 
-	nav {
-		display: flex;
-		justify-content: flex-end;
-
-		button {
-			position: relative;
-			color: $primary;
-			text-decoration: none;
-			padding: 10px;
-			margin: 0 10px;
-			background: white;
-			border:none;
-			outline: none;
-			font-size: 18px;
-
-			&:before {
-				content: '';
-				position: absolute;
-				bottom: 5px;
-				left: 0;
-				background: $secondary;
-				width: 0;
-				height: 2px;
-				transition: 0.3s;
-			}
-
-			&:hover:before {
-				width: 100%;
-			}
-		}
-	}
+.s1,
+.s2,
+.s3 {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	pointer-events: none;
+	transition: 0.3s;
 }
 
 /* Navbar */
 
-// hero banner
-
-.hero-banner {
-	position: relative;
-	padding: 40px 0;
-	margin-top: 30px;
-	width: 100%;
-
-	.hero-banner-content {
-		width: 100%;
-		display: grid;
-		place-items: center;
-
-		img {
-			width: 100%;
-			max-width: 400px;
-			margin-bottom: 30px;
-		}
-
-		h1 {
-			font-size: 3.5rem;
-			text-align: center;
-		}
-
-		h2 {
-			font-size: 2.5rem;
-			text-align: center;
-		}
-
-		.tecnologias {
-			margin-top: 40px;
-
-			img	{
-				width: 100px;
-			}
-		}
-	}
-
-
-}
+@import "navbar";
 
 // hero banner
 
-// proyectos
-
-.proyectos {
-	margin-top: 50px;
-	width: 100%;
-	position: relative;
-
-	.titulo-proyectos{
-		width: 100%;
-		text-align: center;
-
-		h2 {
-			position: relative;
-			display: inline-block;
-			text-align: center;
-			font-size: 2rem;
-
-			&:before {
-				content: '';
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				width: 100%;
-				height: 3px;
-				background: $primary;
-			}
-
-			&:after {
-				content: '';
-				margin: 0 auto;
-				position: absolute;
-				bottom: -10px;
-				left: 0;
-				width: 70%;
-				height: 3px;
-				background: $primary;
-			}
-		}
-	}
-
-
-	.contenedor-proyectos {
-
-		.galeria {
-			padding: 2em 6em;
-			display: grid;
-			grid-gap: 10px;
-			grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
-			grid-auto-flow: dense;
-
-			img {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-			}
-
-			.ancho {
-				grid-column: span 2; 
-			}
-			
-		}
-
-	}
-
-}
+@import "banner";
 
 // proyectos
 
-// contacto
-
-.contacto {
-	width: 100%;
-
-	.contenido-contacto {
-		width: 100%;
-		display: grid;
-		place-items: center;
-
-		.titulo-contacto {
-			width: 100%;
-			text-align: center;
-
-			h2 {
-				position: relative;
-				display: inline-block;
-				text-align: center;
-				font-size: 2rem;
-
-				&:before {
-					content: '';
-					position: absolute;
-					bottom: 0;
-					left: 0;
-					width: 100%;
-					height: 3px;
-					background: $primary;
-				}
-
-				&:after {
-					content: '';
-					margin: 0 auto;
-					position: absolute;
-					bottom: -10px;
-					left: 0;
-					width: 70%;
-					height: 3px;
-					background: $primary;
-				}
-			}
-		}
-
-		form {
-			width: 100%;
-
-			.form-container {
-				width: 50%;
-				padding: 40px;
-
-				input, textarea {
-					width: 100%;
-					border: 0.5px solid $primary;
-					outline: none;
-					padding: 10px;
-					font-size: 1.2rem;
-				}
-			}
-		}
-	}
-}
+@import "proyectos";
 
 // contacto
 
-main .tab-content {
-	display: none;
-}
+@import "contacto";
 
 main .tab-content.tab-content-active {
-	display: block;
+	opacity: 1;
+	pointer-events: initial;
 }
